@@ -1,0 +1,49 @@
+×
+{
+  "title": "For Das4 Keyboard (Exchange "" and @)",
+  "rules": [
+    {
+      "description": "Exchange "" shift-'' and # shift-2",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "''",
+            "modifiers": {
+              "mandatory": [
+                "option"
+              ],
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "2",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],              
+            }
+          },
+          "to": [
+            {
+              "key_code": "''",
+              "modifiers": [
+                "shift"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
